@@ -147,7 +147,7 @@ public class Index extends javax.swing.JFrame {
         // TODO add your handling code here:
         String resultado = "";
         String tiempo = (jComboBox1.getSelectedItem().toString() + ":" + jComboBox2.getSelectedItem().toString());
-        DatosConsulta datos = new DatosConsulta(placa.getText(),fecha.getText(),tiempo);
+        Datos datos = new Datos(placa.getText(),fecha.getText(),tiempo);
         try {
             resultado = datos.calculate();
         } catch (ParseException ex) {
